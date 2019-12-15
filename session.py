@@ -1,6 +1,8 @@
-from con_db import con_db# 连接数据库
+from con_db import con_db,client# 连接数据库
 
-con_db = con_db(collection='session').demo_collection #  连接存储用户信息的集合
+
+client.get_collection(collection="session")
+con_db = client.demo_collection #   连接存储用户信息的集合
 
 class Session(object):
     def __init__(self, username):
