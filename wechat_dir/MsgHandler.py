@@ -25,7 +25,7 @@ class MsgHandler(object):
         result = ""
         try:
             # print("用户名：", user)
-            response = get_response_by_keyword(self.msg.content, FromUserName= user)  # 用户信息问题输入口
+            response = get_response_by_keyword(self.msg.content, FromUserName=user)  # 用户信息问题输入口
 
 
 

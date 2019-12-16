@@ -29,7 +29,7 @@ class User(object):
         :param user_colletion:
         :return:
         """
-        # hash_pwd = self.hash_password(password)
+        hash_pwd = self.hash_password(password)
         qurey_dir = {
             'username': self.username,
             'password': self.password

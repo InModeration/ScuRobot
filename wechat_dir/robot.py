@@ -1,16 +1,13 @@
 #!/usr/bin python
 #coding: utf8
-
-import requests
-import json
 import wechat_dir.bot_online as bot_online
 import scu_robot.searchQuestion
-
 # 存储用户对话会话数据,对象
 user_data = {}
 
-# TODO 简单做下。后面慢慢来
-# 关键词 获取回复
+
+
+# TODO 简单做下。后面慢慢来; 关键词 获取回复
 def get_response_by_keyword(keyword, FromUserName):
     """
     用户输入公众号的内容，返回需要回应的

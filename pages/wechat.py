@@ -1,12 +1,15 @@
-from flask import Flask, request, make_response,Blueprint
+from flask import request, make_response,Blueprint
 import hashlib
 from wechat_dir.dispatcher import *
+from AppLog import AppLog
+mylog = AppLog("test")
 
 wechat = Blueprint('wechat', __name__)
 
 @wechat.route('/wechat', methods=["GET", "POST","DETELE","PUT"])
 def main():
     return "OK"
+
 
 @wechat.route('/wechat_api', methods=["GET", "POST"])
 def wechat_api():
@@ -31,16 +34,10 @@ def wechat_api():
             return echostr
     else:
         rec = request.stream.read()  # 接收消息
-        print(u'request data:', '\n', rec.decode())
-
+        # mylog.info(u'request data:', '\n', rec.decode())
         dispatcher = MsgDispatcher(rec)
-
-
         data = dispatcher.dispatch()
-        print(data)
-        with open("./debug.log", "a") as file:
-            file.write(data)
-            file.close()
         response = make_response(data)
         response.content_type = 'application/xml'
         return response
+

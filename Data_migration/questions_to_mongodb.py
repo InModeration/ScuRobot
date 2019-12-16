@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from questionsObject import Questions, Answer
-from scu_log import AppLog
+from AppLog import AppLog
 
 # 数据文件路径
 PATH = "../data_to_db"

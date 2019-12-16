@@ -20,7 +20,7 @@ class MsgDispatcher(object):
 
     def dispatch(self):
         self.result = ""  # 统一的公众号出口数据
-        if self.msg.msgtype == "text": # TODO 回复文字
+        if self.msg.msgtype == "text":  # TODO 回复文字
             self.result = self.handler.textHandle(user=self.msg.user)
         elif self.msg.msgtype == "voice":
             self.result = self.handler.voiceHandle()
