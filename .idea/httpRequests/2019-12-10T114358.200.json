@@ -1,0 +1,25 @@
+[
+  {
+    "_id": "5def73bfaa0d5d3f0637aad0",
+    "answers": [
+      {
+        "content": "江安校区的学生宿舍条件不错,相比望江和华西校区环境更好.希望在这里你会有回家的感觉.具体情况如下： 江安西园一共有22个舍,1-9舍在商业街以西,10-22舍在商业街以东;东园主要是研究生在住",
+        "create_time": "2019-12-10 18:30:24",
+        "create_user": "scubot",
+        "like": 0,
+        "update_time": null
+      }
+    ],
+    "create_time": "2019-12-10 18:30:23",
+    "create_user": "zjianfa",
+    "like": 0,
+    "q_decribe": "新生宿舍怎么样",
+    "q_name": "江安宿舍情况怎么样呢",
+    "q_tag": [
+      "江安",
+      "宿舍",
+      "住宿"
+    ],
+    "update_time": null
+  }
+]

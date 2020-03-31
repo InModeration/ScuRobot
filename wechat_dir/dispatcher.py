@@ -23,7 +23,7 @@ class MsgDispatcher(object):
         if self.msg.msgtype == "text":  # TODO 回复文字
             self.result = self.handler.textHandle(user=self.msg.user)
         elif self.msg.msgtype == "voice":
-            self.result = self.handler.voiceHandle()
+            self.result = self.handler.voiceHandle(user=self.msg.user)
         elif self.msg.msgtype == 'image':
             self.result = self.handler.imageHandle()
         elif self.msg.msgtype == 'video':

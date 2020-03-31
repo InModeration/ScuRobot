@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RobotWang 管理员 | 首页</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+</head>
+<body>
+<!------------------------头部----------------------------->
+<header id="header" class="container">
+    <div class="header-top">
+        <h1>RobotWang 后台管理端</h1>
+        <strong class="pull-right">欢迎：管理员</strong>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="homePage.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="entry-manage.html">词条管理</a></li>
+                    <li><a href="ques-manage.html">问题管理</a></li>
+                    <li><a href="user-manage.html">用户管理</a></li>
+                    <li><a href="opinion-manage.html">意见管理</a></li>
+                    <li><a href="new-entry.html">新增内容</a></li>
+                    <li><a href="indexManager.html">退出系统</a></li>
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!------------------------头部----------------------------->
+<!--*************************内容区*************************-->
+<section class="inner-block container" style=" width: auto; margin-top: 8%">
+    <!-- --------四大板块 --------- -->
+    <div class="market-updates" style="display: inline-flex">
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <div class="market-update-block clr-block2">
+                    <div class="col-sm-7 market-update-left">
+                        <h3>周</h3>
+                        <h4>Zhou</h4>
+                        <h3>建发</h3>
+                        <h4>Jianfa</h4>
+                    </div>
+                    <div class="col-sm-5 market-update-right">
+                        <i class="img5"> </i>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <div class="market-update-block clr-block2">
+                    <div class="col-sm-7 market-update-left">
+                        <h3>叶</h3>
+                        <h4>Ye</h4>
+                        <h3>奎</h3>
+                        <h4>Kui</h4>
+                    </div>
+                    <div class="col-sm-5 market-update-right">
+                        <i class="img7"> </i>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <div class="market-update-block clr-block1 ">
+                    <div class="col-sm-7 market-update-left">
+                        <h3>夏</h3>
+                        <h4>Xia</h4>
+                        <h3>谦益</h3>
+                        <h4>Qianyi</h4>
+                    </div>
+                    <div class="col-sm-5 market-update-right">
+                        <i class="img1"></i>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <div class="market-update-block clr-block2">
+                    <div class="col-sm-7 market-update-left">
+                        <h3>欧阳</h3>
+                        <h4>Ouyang</h4>
+                        <h3>佳航</h3>
+                        <h4>Jiahang</h4>
+                    </div>
+                    <div class="col-sm-5 market-update-right">
+                        <i class="img3"> </i>
+                    </div>
+
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row row1">
+            <div class="col-md-6 ">
+                <div class="market-update-block clr-block2">
+                    <div class="col-sm-7 market-update-left">
+                        <h3>张</h3>
+                        <h4>Zhang</h4>
+                        <h3>旭橙</h3>
+                        <h4>Xucheng</h4>
+                    </div>
+                    <div class="col-sm-5 market-update-right">
+                        <i class="img9"> </i>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------新闻区--------- -->
+
+
+</section>
+
+
+<!--*************************内容区*************************-->
+<!-----------------------尾部------------------------------->
+<footer id="footer" class="container">
+    <div class="text-center">
+        <p style="text-align: center; margin-top: -10px">旺仔机器人 RobotWang</p>
+        <p style="text-align: center; margin-top: -40px">Copyright © 四川大学软件开发实践小组</p>
+    </div>
+</footer>
+<!-----------------------尾部------------------------------->
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    // 禁止后退
+    if (window.history && window.history.pushState) {
+        $(window).on('popstate', function () {
+            window.history.pushState('forward', null, '#');
+            window.history.forward(1);
+        });
+    }
+    window.history.pushState('forward', null, '#'); //在IE中必须得有这两行
+    window.history.forward(1);
+</script>>
+</body>
+</html>

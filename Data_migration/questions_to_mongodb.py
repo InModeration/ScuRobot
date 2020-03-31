@@ -3,24 +3,32 @@ import pandas as pd
 from questionsObject import Questions, Answer
 from AppLog import AppLog
 
+"""
+read all the data in the excel and store 
+"""
+
 # 数据文件路径
 PATH = "../data_to_db"
 mylog = AppLog(name="Data_migration")
+
 
 def read_excel(path):
     pd_data = pd.read_excel(path)
     return pd_data
 
+
 def read_a_line(pd_data):
     data_list = []
     return data_list
 
+
 def add_all_data():
+    # get all the name of the path
     files_name = os.listdir(PATH)
     for name in files_name:
         filepath = PATH + '/' + name
         data = read_excel(filepath)  # 读入一个excel 的文具
-        mylog.info(str(name+"开始插入:"))
+        mylog.info(str(name + "开始插入:"))
         try:
             for i in range(data.shape[0]):  # 遍历每一行
                 dataline = data.iloc[i]
@@ -43,8 +51,9 @@ def add_all_data():
             print(repr(e))
             mylog.error(str("插入问题失败：", repr(e)))
         else:
-            Questions.setIndex() # 设置索引
+            Questions.setIndex()  # 设置索引
             mylog.info(str("插入完成"))
+
 
 def del_all_data():
     if Questions.del_all_questions():
@@ -54,6 +63,3 @@ def del_all_data():
 if __name__ == '__main__':
     # del_all_data()
     add_all_data()
-
-
-

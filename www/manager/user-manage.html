@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RobotWang 管理员 | 用户管理</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/stu-infor.css">
+</head>
+<body>
+<!------------------------头部----------------------------->
+<header id="header" class="container">
+    <div class="header-top">
+        <h1>RobotWang 后台管理端</h1>
+        <strong class="pull-right">欢迎：管理员</strong>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="homePage.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="entry-manage.html">词条管理</a></li>
+                    <li><a href="ques-manage.html">问题管理</a></li>
+                    <li class="active"><a href="user-manage.html">用户管理</a></li>
+                    <li><a href="opinion-manage.html">意见管理</a></li>
+                    <li><a href="new-entry.html">新增内容</a></li>
+                    <li><a href="indexManager.html">退出系统</a></li>
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!------------------------头部----------------------------->
+<!--*************************内容区*************************-->
+<section id="context" class="container" style="margin-bottom: 35px">
+    <div class="row text-center">
+        <h4 style="font-size: 30px">所有用户管理</h4>
+    </div>
+
+    <div class="row">
+
+        <table class="table table-bordered">
+
+            <thead style="text-align: center">
+            <p id="if_any" style="text-align: center; margin-top: 15%">用户列表加载失败，刷新页面重试！</p>
+            <tr id="if_any_2" style="display: none">
+                <th style="width: 60px">序号</th>
+                <th style="width: 160px">用户id</th>
+                <th style="width: 150px">用户姓名</th>
+                <th style="width: 250px">用户密码</th>
+                <th style="width: 250px">用户名</th>
+                <th style="width: 80px">操作</th>
+            </tr>
+            </thead>
+            <tbody id="user_info">
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!--*************************内容区*************************-->
+<!-----------------------尾部------------------------------->
+<footer id="footer" class="container">
+    <div class="text-center">
+        <p style="text-align: center; margin-top: -10px">旺仔机器人 RobotWang</p>
+        <p style="text-align: center; margin-top: -40px">Copyright © 四川大学软件开发实践小组</p>
+    </div>
+</footer>
+<!-----------------------尾部------------------------------->
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="my_js/user-manage.js"></script>
+</body>
+</html>

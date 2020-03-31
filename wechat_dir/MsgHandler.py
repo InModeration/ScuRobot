@@ -27,8 +27,6 @@ class MsgHandler(object):
             # print("用户名：", user)
             response = get_response_by_keyword(self.msg.content, FromUserName=user)  # 用户信息问题输入口
 
-
-
             if response['type'] == "image":
                 result = self.imageHandle(self.msg.user, self.msg.master, self.time, response['content'])
             elif response['type'] == "music":
@@ -45,8 +43,9 @@ class MsgHandler(object):
                 result = template.format(self.msg.user, self.msg.master, self.time, data)
                 print("1", result)
             else:
-                response = get_turing_response(self.msg.content)
-                result = template.format(self.msg.user, self.msg.master, self.time, response)
+                pass
+                # response = get_turing_response(self.msg.content)
+                # result = template.format(self.msg.user, self.msg.master, self.time, response)
             #with open("./debug.log", 'a') as f:
             #   f.write(response['content'] + '~~' + result)
             #    f.close()
@@ -76,9 +75,49 @@ class MsgHandler(object):
         response = template.format(self.msg.user, self.msg.master, self.time, title, description, url, hqurl)
         return response
 
-    def voiceHandle(self):
-        response = get_turing_response(self.msg.recognition)
-        result = self.textHandle(self.msg.user, self.msg.master, self.time, response)
+    def voiceHandle(self, user=''):
+        print(self.msg.recognition)
+        template = """
+                <xml>
+                     <ToUserName><![CDATA[{}]]></ToUserName>
+                     <FromUserName><![CDATA[{}]]></FromUserName>
+                     <CreateTime>{}</CreateTime>
+                     <MsgType><![CDATA[text]]></MsgType>
+                     <Content><![CDATA[{}]]></Content>
+                 </xml>
+                """
+        # 对用户发过来的数据进行解析，并执行不同的路径
+        result = ""
+        try:
+            # print("用户名：", user)
+            response = get_response_by_keyword(self.msg.recognition, FromUserName=user)  # 用户信息问题输入口
+            if response['type'] == "image":
+                result = self.imageHandle(self.msg.user, self.msg.master, self.time, response['content'])
+            elif response['type'] == "music":
+                data = response['content']
+                result = self.musicHandle(data['title'], data['description'], data['url'], data['hqurl'])
+            elif response['type'] == "news":
+                items = response['content']
+                result = self.newsHandle(items)
+            # 这里还可以添加更多的拓展内容
+            elif response['type'] == "text":
+                data = response["content"]
+                # response = "测试"
+                # print(result)
+                result = template.format(self.msg.user, self.msg.master, self.time, data)
+                print("1", result)
+            else:
+                pass
+                # response = get_turing_response(self.msg.content)
+                # result = template.format(self.msg.user, self.msg.master, self.time, response)
+            # with open("./debug.log", 'a') as f:
+            #   f.write(response['content'] + '~~' + result)
+            #    f.close()
+        except Exception as e:
+            # with open("./debug.log", 'a') as f:
+            # f.write("text handler:"+str(e.message))
+            # f.close()
+            pass
         return result
 
     def imageHandle(self, user='', master='', time='', mediaid=''):
@@ -101,6 +140,8 @@ class MsgHandler(object):
         return result
 
     def videoHandle(self):
+
+
         return 'video'
 
     def shortVideoHandle(self):
@@ -112,8 +153,50 @@ class MsgHandler(object):
     def linkHandle(self):
         return 'link'
 
-    def eventHandle(self):
-        return 'event'
+    def eventHandle(self, user='', master='', time='', content=''):
+        print("----------------------")
+        template = """
+                <xml>
+                     <ToUserName><![CDATA[{}]]></ToUserName>
+                     <FromUserName><![CDATA[{}]]></FromUserName>
+                     <CreateTime>{}</CreateTime>
+                     <MsgType><![CDATA[text]]></MsgType>
+                     <Content><![CDATA[{}]]></Content>
+                 </xml>
+                """
+        # 对用户发过来的数据进行解析，并执行不同的路径
+        result = ""
+        try:
+            # print("用户名：", user)
+            response = get_response_by_keyword(keyword="关于")  # 用户信息问题输入口
+            if response['type'] == "image":
+                result = self.imageHandle(self.msg.user, self.msg.master, self.time, response['content'])
+            elif response['type'] == "music":
+                data = response['content']
+                result = self.musicHandle(data['title'], data['description'], data['url'], data['hqurl'])
+            elif response['type'] == "news":
+                items = response['content']
+                result = self.newsHandle(items)
+            # 这里还可以添加更多的拓展内容
+            elif response['type'] == "text":
+                data = response["content"]
+                # response = "测试"
+                # print(result)
+                result = template.format(self.msg.user, self.msg.master, self.time, data)
+                print("1", result)
+            else:
+                pass
+                # response = get_turing_response(self.msg.content)
+                # result = template.format(self.msg.user, self.msg.master, self.time, response)
+            # with open("./debug.log", 'a') as f:
+            #   f.write(response['content'] + '~~' + result)
+            #    f.close()
+        except Exception as e:
+            # with open("./debug.log", 'a') as f:
+            # f.write("text handler:"+str(e.message))
+            # f.close()
+            pass
+        return result
 
     def newsHandle(self, items):
         # 图文消息这块真的好多坑，尤其是<![CDATA[]]>中间不可以有空格，可怕极了

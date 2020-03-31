@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RobotWang 管理员 | 新增内容</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/homePage.css">
+    <link rel="stylesheet" href="css/test-paper.css">
+</head>
+<body>
+<!------------------------头部----------------------------->
+<header id="header" class="container">
+    <div class="header-top">
+        <h1>RobotWang 后台管理端</h1>
+        <strong class="pull-right">欢迎：管理员</strong>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#">Brand</a>-->
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="homePage.html">首页 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="entry-manage.html">词条管理</a></li>
+                    <li><a href="ques-manage.html">问题管理</a></li>
+                    <li><a href="user-manage.html">用户管理</a></li>
+                    <li><a href="opinion-manage.html">意见管理</a></li>
+                    <li class="active"><a href="new-entry.html">新增内容</a></li>
+                    <li><a href="indexManager.html">退出系统</a></li>
+                </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+<!------------------------头部----------------------------->
+<!--*************************内容区*************************-->
+<section id="testContent" class="container" style="margin-bottom: 35px">
+
+    <!-- 标签页头-->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                  data-toggle="tab">创建词条</a></li>
+        <li role="presentation"><a id="new_q" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">创建问题</a></li>
+
+    </ul>
+    <!-- 标签页内容 -->
+    <div class="tab-content">
+        <!--------创建词条--------->
+        <!--======板块一内容========-->
+        <div role="tabpanel" class="tab-pane active left" id="home">
+            <div class="testbg container">
+
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-8">
+                            <div class="text" style="margin-left: 40%">
+                                <form class="form-horizontal" method="post" enctype="multipart/form-data"
+                                      id="file_upload">
+                                    <div class="form-group">
+                                        <label for="inputnum" class="col-sm-2 control-label">标签：</label>
+                                        <div class="col-sm-10">
+                                            <input type="" class="form-control" id="input_entry" placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-6">
+                                            <button type="button" id="new-entry"
+                                                    class="btn btn-default btn-block btn-info" style="margin-left: 30%">
+                                                创建标签
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--======创建问题=========-->
+        <!--======板块二内容========-->
+        <div role="tabpanel" class="tab-pane" id="profile">
+            <div role="tabpanel" class="tab-pane active left">
+                <div class="testbg container">
+
+
+                    <div class="container">
+                        <div class="row">
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="text" style="margin-left: 30%; width: 95%">
+                                <form class="form-horizontal" method="post" enctype="multipart/form-data"
+                                      id="file_upload_2">
+                                    <div class="form-group">
+                                        <label for="q_content" class="col-sm-2 control-label">问题内容：</label>
+                                        <div class="col-sm-10">
+                                            <input type="" class="form-control" id="q_content" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="q_describe" class="col-sm-2 control-label">问题描述：</label>
+                                        <div class="col-sm-10">
+                                            <input type="" class="form-control" id="q_describe" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="q_tag" class="col-sm-2 control-label">问题标签：</label>
+                                        <div class="col-sm-10">
+                                            <input type="" class="form-control" id="q_tag" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="q_creater" class="col-sm-2 control-label">创建者：</label>
+                                        <div class="col-sm-10">
+                                            <input type="" class="form-control" id="q_creater" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-6">
+                                            <button id="create_ques" type="button"
+                                                    class="btn btn-default btn-block btn-info" style="margin-left: 30%">
+                                                新建问题
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!--*************************内容区*************************-->
+<!-----------------------尾部------------------------------->
+<footer id="footer" class="container">
+    <div class="text-center">
+        <p style="text-align: center; margin-top: -10px">旺仔机器人 RobotWang</p>
+        <p style="text-align: center; margin-top: -40px">Copyright © 四川大学软件开发实践小组</p>
+    </div>
+</footer>
+<!-----------------------尾部------------------------------->
+
+
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    let new_entry = $("#new-entry");
+    let input_entry = $("#input_entry");
+    new_entry.click(() => {
+        if (input_entry.val() === '')
+            alert("无法创建空白词条！");
+        else {
+            alert("创建成功");
+            location.reload();
+        }
+    });
+</script>
+<script src="my_js/new_ques.js"></script>
+</body>
+</html>

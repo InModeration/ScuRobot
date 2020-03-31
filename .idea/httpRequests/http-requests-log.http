@@ -1,0 +1,400 @@
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024849.200.json
+
+###
+
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024820.500.html
+
+###
+
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024812.405.html
+
+###
+
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024721.405.html
+
+###
+
+GET http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024658.200.html
+
+###
+
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024629.405.html
+
+###
+
+POST http://127.0.0.1:5000/user/a_user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024541.405.html
+
+###
+
+POST http://127.0.0.1:5000/user/a_user?username=zjianfa&name=xxxxx&password=12345
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T024454.405.html
+
+###
+
+GET http://127.0.0.1:5000/user/all_user?num=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T023629.200.json
+
+###
+
+POST http://127.0.0.1:5000/user/all_user?num=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-12T023618.405.html
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?_id=5def73bfaa0d5d3f0637aad0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T114358.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?_id=5def73bfaa0d5d3f0637aad0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T114343.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?=
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T114324.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_id=5def73bfaa0d5d3f0637aad0
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113710.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113637.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113508.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113507.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113506-1.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113506.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113503.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113413.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113347.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113236.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=2
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113220.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113134.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113052.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=1
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T113015.500.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?q_name="江安宿舍情况怎么样呢"
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112954.500.html
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_name="江安宿舍情况怎么样呢"
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112850.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_name=江安宿舍情况怎么样呢
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112825.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_name=江安宿舍情况怎么样呢
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112543.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_name="江安宿舍情况怎么样呢"
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112528.200.json
+
+###
+
+POST http://127.0.0.1:5000/q_and_a?q_name=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T112429.200.json
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T102023.200.json
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T102013.200.json
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101925.200.json
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101834.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101813.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101635.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101553.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101525.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101457.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101442.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101246.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101200.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T101141.500.html
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T085946.200.json
+
+###
+
+GET http://127.0.0.1:5000/tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T085827.200.json
+
+###
+
+GET http://127.0.0.1:5000/get_tag?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T085816.404.html
+
+###
+
+GET http://127.0.0.1:5000/q_and_a?num=8
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-12-10T080108.200.json
+
+###
+

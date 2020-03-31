@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8638d47-b110-4504-9e36-fda441cf240c" name="默认的" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1UTHzUPxiwPANOZ7n5D8dWptoJG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\嗯冲丶\大三上\软件开发实践\前端\bootstrap--master\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\嗯冲丶\大三上\软件开发实践\前端\bootstrap--master" />
+      <recent name="C:\Users\s\Desktop\Bootstrap结课作业\img" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="indexManager.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bootstrap--master/indexManager.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/bootstrap--master/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="indexManager.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="indexManager.js" working-dir="$PROJECT_DIR$/my_js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="JavaScript Debug.indexManager.html" />
+        <item itemvalue="Node.js.indexManager.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8638d47-b110-4504-9e36-fda441cf240c" name="默认的" comment="" />
+      <created>1572868838812</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572868838812</updated>
+      <workItem from="1572868840104" duration="162000" />
+      <workItem from="1572871530680" duration="5421000" />
+      <workItem from="1572914707557" duration="13055000" />
+      <workItem from="1572958748662" duration="5993000" />
+      <workItem from="1573003050638" duration="2310000" />
+      <workItem from="1573038816462" duration="13095000" />
+      <workItem from="1573135651712" duration="26000" />
+      <workItem from="1573366092966" duration="138000" />
+      <workItem from="1573369262023" duration="1305000" />
+      <workItem from="1573648605985" duration="1784000" />
+      <workItem from="1573650809835" duration="2829000" />
+      <workItem from="1573655727268" duration="167000" />
+      <workItem from="1575373930248" duration="4094000" />
+      <workItem from="1575976802853" duration="6492000" />
+      <workItem from="1576157247544" duration="1543000" />
+      <workItem from="1576211495227" duration="10407000" />
+      <workItem from="1576323306894" duration="15987000" />
+      <workItem from="1576385042422" duration="1844000" />
+      <workItem from="1576390571941" duration="21833000" />
+      <workItem from="1576420059997" duration="6399000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576425251836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576425251836" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1576221473482">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1576221473482" />
+    <state x="613" y="127" width="693" height="786" key="find.popup" timestamp="1576221421106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="127" width="693" height="786" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576221421106" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1576401347391">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576401347391" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1576421198580">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1576421198580" />
+  </component>
+</project>

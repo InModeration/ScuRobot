@@ -29,6 +29,7 @@ def question1():
         q_name = request.form.get("q_name")
         q_decribe = request.form.get("q_decribe")
         q_tag_data = request.form.get("q_tag")  # 以逗号为分割符
+        print(q_tag_data)
         q_tag = q_tag_data.split(",")
         create_user = request.form.get("create_user")
         Q = Questions(q_name=q_name, q_describe=q_decribe, q_tag=q_tag, create_user=create_user)

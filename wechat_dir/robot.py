@@ -1,11 +1,10 @@
 #!/usr/bin python
 #coding: utf8
 import wechat_dir.bot_online as bot_online
-import scu_robot.searchQuestion
+import wechat_dir.searchAnswer
+
 # 存储用户对话会话数据,对象
 user_data = {}
-
-
 
 # TODO 简单做下。后面慢慢来; 关键词 获取回复
 def get_response_by_keyword(keyword, FromUserName):
@@ -14,18 +13,33 @@ def get_response_by_keyword(keyword, FromUserName):
     :param keyword: 用户输入的文字内容
     :return:
     """
+    keyword = keyword.strip()
     result = {"type": "text", "content": ""}
-    if keyword[0:2] == "川大":
+    if keyword[0:2] == "川大" and len(keyword) > 2:
         # TODO 使用自己的接口函数
         keyword = keyword[2:]
-        print("查询信息：", keyword)
-        res = scu_robot.searchQuestion.searchByText(keyword)
-        contens = res[0]["answers"]
-        respose = ''
-        for i in contens:
-            respose = respose + i["content"]
-        print(respose)
-        result["content"] = respose
+        all = wechat_dir.searchAnswer.get_all(keyword)
+        result["content"] = all
+        return result
+    elif(keyword == "关于"):
+        items = [{"title": "关于小旺", "description":"川大旺仔机器人来了",
+                  "picurl": "https://mmbiz.qpic.cn/mmbiz_png/N0TtADLPQTuJ7S0Z1qeiah5NKqs5JemQF2uMskl8w"
+                           "Lxlr3FOL1pMUOG520tuPu85zhZTz5KkkDtCBKLJvT51MZw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1",
+                  "url": "https://mp.weixin.qq.com/s?__biz=MzU3NjQ2NzE0Mg==&mid=2247483666&idx=1&sn=8b"
+                        "776010e3b2ca9e6423a4d943279cd6&chksm=fd1238bbca65b1ad1f4f9285d4eba2bd740918d8b"
+                        "87639e4fe3f9aa827e9520b03b127d93a19&mpshare=1&scene=1&srcid=&sharer_sharetime=1"
+                        "576571691691&sharer_shareid=0c4ea2c04f3a953aa3997553096ddcbe&key=d7e4c668a94db83"
+                        "b4f29c67d20b03faec3b596ea33a97d8e52f28c8a43e9c4bcf926c7947789ade51dfd0bece2cf007"
+                        "7a2127aea7b534438a51aedd6c861111516918b98a736bb9d2e6f9c901921f230&ascene=1&uin=Mj"
+                        "MxOTU2NjExNQ%3D%3D&devicetype=Windows+10&version=62070158&lang=zh_CN&exportkey=A"
+                        "9bILHNqIBtWfFLotoc7%2F7U%3D&pass_ticket=TREAj1%2BzaMc0ia578TfmmtBxRbqyzUPrx0ENwZ"
+                        "XthFokcyhAKsGI%2B5uNHpyhPzVJ"},
+                  ]
+        result = {"type": "news", "content": items}
+        return result
+    elif(keyword[0:2] == "川大" and len(keyword) == 2):
+        all = "你可以在川大后面加上相应的查询信息，这也就可以查询相关的川大校园信息，也欢迎访问小旺的网页 www.scuker.xyz\n"
+        result["content"] = all
         return result
     elif(keyword[0:4] == "四川大学"):
         result["content"] = "四川大学（Sichuan University）简称“川大”，坐落于" \
@@ -38,8 +52,10 @@ def get_response_by_keyword(keyword, FromUserName):
                             "员单位、医学“双一流”建设联盟成员、自主划线高校，是国家布局在中国" \
                             "部重点建设的高水平研究型综合大学。"
         return result
-    elif(keyword[0:2] == "你是"):
-        result["content"] = "Hi，我是川大旺仔机器人，我知道川大的一切，我可以查天气，讲笑话，订机票哦~ 除此之外还有几十项实用好玩的功能哦~ 快来试试吧"
+    elif(keyword[0:2] == "你是" and len(keyword) < 3):
+        result["content"] = "Hi，我是川大旺仔机器人，我知道川大的一切，我可以查天气，讲笑话， 除此之外还有几十项实用好玩的功能哦~ 快来试试吧\n" \
+                            "你可以在搜索的前面加上\"川大\"两个字，这样可以收索关于川大的相关问题\n" \
+                            "你也可以访问我们的旺仔网站： www.scuker.xyz:8080\n"
         return result
     else:
         # 先查询用户数据字典里面有没有信息，若无信息则新建一个对象，并存储，
